@@ -4,17 +4,29 @@
 	box-sizing: border-box;
 }
 body{
-	background-image: url(img/bg.png);
-	background-size: : cover;
+	overflow-y: hidden;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url(img/bg1.png);
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 section{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 50px 15%;
+	padding: 0px 22%;
 }
 .login{
+	width: 70%;
+	background-color: #fff;
+	padding: 80px 15%;
+	box-shadow: 0px 8px 20px 5px rgba(0, 0, 0, 0.50);
+	border-radius: 15px;
+}
+.cadastro{
 	width: 70%;
 	background-color: #fff;
 	padding: 80px 10%;
@@ -22,11 +34,11 @@ section{
 	border-radius: 15px;
 }
 h1, h4{
-	color: #7400b8;
+	color: #56cfe1;
 	text-align: center;
 }
 .btn{
-	background-color: #7400b8;
+	background-color: #56cfe1;
 	color: #fff;
 	transition: .3s;
 }
@@ -38,5 +50,16 @@ input{
 	width: 500px;
 }
 i{
-	color: #7400b8;
+	font-size: 20px;
+	color: #56cfe1;
+}
+.form-control{
+	height: 50px;
+}
+.btn-button{
+	margin-top: 5%;
+}
+.password-toggle{
+	cursor: pointer;
+	user-select: none;
 }
